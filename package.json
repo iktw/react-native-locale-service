@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/iktw/react-native-locale-service#readme",
   "dependencies": {
-    "lodash": "^4.8.2",
     "react-native-http": "0.0.2"
   }
 }
