@@ -77,6 +77,8 @@ class LocaleService {
       var selectedLocaleName = await AsyncStorage.getItem(this.selectedLocaleNameStorageKey);
       var localeName = selectedLocaleName ? selectedLocaleName : this.defaultLocaleName;
 
+      this.currentLocaleName = localeName;
+
       var localeDataStorageKey = this._getLocaleDataStorageKeyWithLocaleName(localeName);
       var stringifiedLocaleData = await AsyncStorage.getItem(localeDataStorageKey, () => this._fetchAndSetLocaleFromRemoteWithLocaleName(localeName));
       this.localeData = stringifiedLocaleData ? JSON.parse(stringifiedLocaleData) : undefined;
