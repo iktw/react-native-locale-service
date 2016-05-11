@@ -1,6 +1,6 @@
 {
   "name": "react-native-locale-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native Locale Service simplifies the usage of i18n for your react native application.",
   "main": "index.js",
   "scripts": {
