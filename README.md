@@ -11,6 +11,16 @@ React Native Locale Service simplifies the usage of i18n for your react native a
 |defaultLocaleName | String | en |
 | trailingPrefix | String | N/A |
 
+### Methods
+| Methods        | Args         
+| ------------- |-------------|
+|setSelectedLocaleWithLocaleName | None |
+| setLocaleData | None |
+| clearLocaleData     | None |
+| clearSelectedLocaleName | None |
+| getTranslationWithKey | None |
+
+
 ## Example of usage
 
 #### index.*.js
