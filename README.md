@@ -2,7 +2,7 @@
 React Native Locale Service simplifies the usage of i18n for your react native application.
 
 ## Install package
-``` npm install react-native-locale-service ```
+``` npm install react-native-locale-service --save ```
 
 ### Props
 | Name        | Type | Default |
