@@ -19,7 +19,6 @@ class LocaleService {
         this.trailingPrefix = trailingPrefix ||  '';
 
         this.localeData = undefined;
-        this.httpService = new HTTPService();
 
         this.localeDataStoragePrefix = 'localeService-locale-';
         this.selectedLocaleNameStorageKey = 'localeService-selected-locale-name';
@@ -55,9 +54,8 @@ class LocaleService {
         var localeData;
 
         try {
-            localeData = await this.httpService.get(urlString, undefined, {
-                skipAuthorization: true
-            });
+            response = await fetch(urlString);
+            localeData = await response.json();
             await AsyncStorage.setItem(storageKey, JSON.stringify(localeData));
         } catch (e) {
             localeData = {};
