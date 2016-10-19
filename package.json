@@ -1,6 +1,6 @@
 {
   "name": "react-native-locale-service",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React Native Locale Service simplifies the usage of i18n for your react native application.",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/iktw/react-native-locale-service/issues"
   },
-  "homepage": "https://github.com/iktw/react-native-locale-service#readme"
+  "homepage": "https://github.com/iktw/react-native-locale-service#readme",
+  "dependencies": {
+    "axios": "^0.15.2"
+  }
 }

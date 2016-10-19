@@ -1,10 +1,9 @@
 import {
-    HTTPService
-} from 'react-native-http';
-
-import {
     AsyncStorage
 } from 'react-native';
+
+
+import axios from 'axios';
 
 
 class LocaleService {
@@ -54,8 +53,8 @@ class LocaleService {
         var localeData;
 
         try {
-            response = await fetch(urlString);
-            localeData = await response.json();
+            response = await axios.get(urlString);
+            localeData = await response.data;
             await AsyncStorage.setItem(storageKey, JSON.stringify(localeData));
         } catch (e) {
             localeData = {};
